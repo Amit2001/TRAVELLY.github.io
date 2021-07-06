@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 15vh;
+    background-color: rgb(59, 58, 55);
+    flex-wrap: wrap;
+    
+}
+
+nav h1{
+
+
+    font-family: 'Tourney', cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 0px 8px white;
+    
+}
+
+nav ul{
+    display: flex;
+    width: 50%;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 2px 12px white;
+    transition: all 0.5s ;
+    
+}
+nav ul a:hover{
+    border-bottom: 4px solid whitesmoke;
+}
+
+
+
+
+header text{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header text::before{
+    content: "";
+    position: absolute;
+    top: 15vh;
+    width: 100vw;
+    min-height: 100vh;
+    background:url('https://images.pexels.com/photos/2896668/pexels-photo-2896668.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+header text h2{
+    width: 90%;
+    font-size: 70px;
+    margin-top: 30vh;
+    color:whitesmoke;
+    padding: 1vh;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 20px black;
+}
+header text h3{
+
+    width: 50%;
+    font-size: 30px;
+    color: white;
+    padding: 2vh;
+    text-align: center;
+    text-shadow: 2px 2px 20px black;
+}
+header text button{
+    margin-top: 3vh;
+    font-size: 20px;
+    padding: 5px;
+    background: linear-gradient(to top,rgb(45, 178, 211),rgb(10, 105, 112));
+    color: white;
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+}
+
+header text button:hover{
+    background: linear-gradient(to top,rgb(10, 105, 112),rgb(45, 178, 211));
+    color: white;
+}
+
+main{
+   display: flex;
+   flex-direction: column;
+
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center/cover;
+}
+
+ 
+
+main h2{
+    margin-top: 35vh;
+    width: 90%;
+    height: 30%;
+    font-size: 70px;
+    text-shadow: 2px 2px 30px black;
+    color: white;
+}
+
+main h3{
+    width: 80%;
+    height: 80%;
+    font-size: 40px;
+    text-shadow: 2px 2px 40px black;
+    padding: 10px;
+    color: white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100vw;
+    background-color:grey;
+    
+}
+section h2{
+    width: 90%;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 10px white;
+}
+section h3{
+    width: 90%;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 10px white;
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.boxes i{
+    font-size: 30px;
+}
+.box1,.box2,.box3{
+    margin: 2vh 2vh;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 10px;
+
+}
+.boxes i{
+    width: 25vw;
+    size: 4vw;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(201, 247, 242);
+    border-top-left-radius:10px; 
+    border-top-right-radius:10px; 
+}
+.boxes h2{
+    width: 25vw;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+
+}
+.boxes h3{
+
+    width: 25vw;
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.form_outer{
+    background: url('https://images.pexels.com/photos/7903171/pexels-photo-7903171.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center/cover;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.form_inner{
+
+
+    height: 50%;
+    width: 40%;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    
+}
+
+.name , .mail{
+    padding: 10px;
+    text-shadow: 2px 2px 30px black;
+    color: white;
+}
+
+.form_inner button{
+    padding: 10px;
+    width: 30%;
+
+    text-align: center;
+}
+
+footer{
+    width: 100vw;
+    background-color: rgb(59, 58, 55);
+}
+footer .logos{
+    font-size: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+}
+
